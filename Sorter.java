@@ -26,7 +26,9 @@ public class Sorter {
             arr[j + 1] = key;
         }
     }
-
+    public static void sort(int[] arr){
+        insertionSort(arr);
+    }
     public static void main(String[] args) {
         int[] arr1 = {9, 14, 3, 2, 43, 11, 58, 22};
         System.out.println("Before Selection Sort");
