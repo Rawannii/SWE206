@@ -1,8 +1,10 @@
 public class Sorter {
+
     public static void main(String[] args) {
         int[] array = {9, 14, 3, 2, 43, 11, 58, 22};
         sort(array);
     }
+
 
     public static void selectionSort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
@@ -33,11 +35,13 @@ public class Sorter {
             }
             arr[j + 1] = key;
         }
+
         System.out.println("After Insertion Sort");
         for (int i : arr) {
             System.out.print(i + " ");
         }
         System.out.println();
+
     }
 
     public static void sort(int[] arr) {
@@ -45,7 +49,4 @@ public class Sorter {
         selectionSort(arr);
 
     }
-
-
-
 }
